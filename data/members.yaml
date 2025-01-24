@@ -1,0 +1,141 @@
+members:
+  - name: "Daniel Izquierdo Cortázar"
+    role: "President"
+    location: "Spain"
+    area: "spain"
+
+  - name: "Yuki Hattori"
+    role: "Vice President"
+    location: "Japan"
+    area: "japan"
+
+  - name: "Matt Cobby"
+    role: "Secretary"
+    location: "Australia"
+    area: "Australia"
+
+  - name: "Katie Schueths"
+    role: "Assistant Secretary"
+    location: "United States of America"
+    area: "United States of America"
+
+  - name: "Tom Sadler"
+    role: "Treasurer"
+    location: "United Kingdom"
+    area: "GBR"
+
+  - name: "Georg Grütter"
+    role: "Assistant Treasurer"
+    location: "Germany"
+    area: "germany"
+
+  - name: "Danese Cooper"
+    role: "Board Member"
+    location: "United States of America"
+    area: "United States of America"
+
+  - name: "Clare Dillon"
+    role: "Board Member"
+    location: "Ireland"
+    area: "Ireland"
+
+  - name: "Sebastian Spier"
+    role: "Board Member"
+    location: "Germany"
+    area: "germany" 
+
+  - name: "Ada Dai"
+    role: "Member"
+    area: "China"
+
+  - name: "Addie Girouard"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Bill Higgins"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Brittany Istenes"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Cedric Williams"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Chan Voong"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Cristina Coffey"
+    role: "Member"
+    area: "Ireland"
+
+  - name: "Fei Wan"
+    role: "Member"
+    area: "China"
+
+  - name: "Guilherme Dellagustin"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Igor Zubaiurre"
+    role: "Member"
+    area: "Spain"
+
+  - name: "Isabel Drost-Fromm"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Jacob Green"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Jeff Bailey"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Jerry Tan"
+    role: "Member"
+    area: "China"
+
+  - name: "Justin Gosses"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Klaas-Jan Stol"
+    role: "Member"
+    area: "Ireland"
+
+  - name: "Maximilian Capraro"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Mishari Muqbil"
+    role: "Member"
+    area: "Thailand"
+
+  - name: "Russell Rutledge"
+    role: "Executive Director"
+    area: "United States of America"
+
+  - name: "Silona Bonewald"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Thomas Froment"
+    role: "Member"
+    area: "France"
+
+  - name: "Tim Yao"
+    role: "Member"
+    area: "United States of America"
+
+  - name: "Willem Jiang"
+    role: "Member"
+    area: "China"
+
+  - name: "Zack Koppert"
+    role: "Member"
+    area: "United States of America"

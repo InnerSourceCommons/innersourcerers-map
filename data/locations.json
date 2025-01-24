@@ -1,0 +1,2453 @@
+{
+  "countries": {
+    "100": {
+      "name": "Bulgaria",
+      "capital": {
+        "name": "Sofia",
+        "coordinates": [
+          23.32,
+          42.68
+        ]
+      }
+    },
+    "104": {
+      "name": "Myanmar",
+      "capital": {
+        "name": "Naypyidaw",
+        "coordinates": [
+          96.07,
+          19.76
+        ]
+      }
+    },
+    "108": {
+      "name": "Burundi",
+      "capital": {
+        "name": "Gitega",
+        "coordinates": [
+          29.93,
+          -3.43
+        ]
+      }
+    },
+    "112": {
+      "name": "Belarus",
+      "capital": {
+        "name": "Minsk",
+        "coordinates": [
+          27.57,
+          53.9
+        ]
+      }
+    },
+    "116": {
+      "name": "Cambodia",
+      "capital": {
+        "name": "Phnom Penh",
+        "coordinates": [
+          104.92,
+          11.55
+        ]
+      }
+    },
+    "120": {
+      "name": "Cameroon",
+      "capital": {
+        "name": "Yaoundé",
+        "coordinates": [
+          11.5,
+          3.85
+        ]
+      }
+    },
+    "124": {
+      "name": "Canada",
+      "capital": {
+        "name": "Ottawa",
+        "coordinates": [
+          -75.7,
+          45.42
+        ]
+      }
+    },
+    "132": {
+      "name": "Cabo Verde",
+      "capital": {
+        "name": "Praia",
+        "coordinates": [
+          -23.52,
+          14.92
+        ]
+      }
+    },
+    "136": {
+      "name": "Cayman Islands",
+      "capital": {
+        "name": "George Town",
+        "coordinates": [
+          -81.38,
+          19.3
+        ]
+      }
+    },
+    "140": {
+      "name": "Central African Republic",
+      "capital": {
+        "name": "Bangui",
+        "coordinates": [
+          18.58,
+          4.37
+        ]
+      }
+    },
+    "144": {
+      "name": "Sri Lanka",
+      "capital": {
+        "name": "Sri Jayawardenepura Kotte",
+        "coordinates": [
+          79.9,
+          6.89
+        ]
+      }
+    },
+    "148": {
+      "name": "Chad",
+      "capital": {
+        "name": "N'Djamena",
+        "coordinates": [
+          15.03,
+          12.1
+        ]
+      }
+    },
+    "152": {
+      "name": "Chile",
+      "capital": {
+        "name": "Santiago",
+        "coordinates": [
+          -70.67,
+          -33.45
+        ]
+      }
+    },
+    "156": {
+      "name": "China",
+      "capital": {
+        "name": "Beijing",
+        "coordinates": [
+          116.38,
+          39.92
+        ]
+      }
+    },
+    "158": {
+      "name": "Taiwan, Province of China",
+      "capital": {
+        "name": "Taipei",
+        "coordinates": [
+          121.52,
+          25.03
+        ]
+      }
+    },
+    "162": {
+      "name": "Christmas Island",
+      "capital": {
+        "name": "Flying Fish Cove",
+        "coordinates": [
+          105.68,
+          -10.42
+        ]
+      }
+    },
+    "166": {
+      "name": "Cocos (Keeling) Islands",
+      "capital": {
+        "name": "West Island",
+        "coordinates": [
+          96.83,
+          -12.17
+        ]
+      }
+    },
+    "170": {
+      "name": "Colombia",
+      "capital": {
+        "name": "Bogotá",
+        "coordinates": [
+          -74.07,
+          4.71
+        ]
+      }
+    },
+    "174": {
+      "name": "Comoros",
+      "capital": {
+        "name": "Moroni",
+        "coordinates": [
+          43.23,
+          -11.7
+        ]
+      }
+    },
+    "175": {
+      "name": "Mayotte",
+      "capital": {
+        "name": "Mamoudzou",
+        "coordinates": [
+          45.22,
+          -12.78
+        ]
+      }
+    },
+    "178": {
+      "name": "Congo",
+      "capital": {
+        "name": "Brazzaville",
+        "coordinates": [
+          15.28,
+          -4.25
+        ]
+      }
+    },
+    "180": {
+      "name": "Congo, Democratic Republic of the",
+      "capital": {
+        "name": "Kinshasa",
+        "coordinates": [
+          15.3,
+          -4.32
+        ]
+      }
+    },
+    "184": {
+      "name": "Cook Islands",
+      "capital": {
+        "name": "Avarua",
+        "coordinates": [
+          -159.77,
+          -21.2
+        ]
+      }
+    },
+    "188": {
+      "name": "Costa Rica",
+      "capital": {
+        "name": "San José",
+        "coordinates": [
+          -84.09,
+          9.93
+        ]
+      }
+    },
+    "191": {
+      "name": "Croatia",
+      "capital": {
+        "name": "Zagreb",
+        "coordinates": [
+          16,
+          45.8
+        ]
+      }
+    },
+    "192": {
+      "name": "Cuba",
+      "capital": {
+        "name": "Havana",
+        "coordinates": [
+          -82.35,
+          23.12
+        ]
+      }
+    },
+    "196": {
+      "name": "Cyprus",
+      "capital": {
+        "name": "Nicosia",
+        "coordinates": [
+          33.37,
+          35.17
+        ]
+      }
+    },
+    "203": {
+      "name": "Czechia",
+      "capital": {
+        "name": "Prague",
+        "coordinates": [
+          14.47,
+          50.08
+        ]
+      }
+    },
+    "204": {
+      "name": "Benin",
+      "capital": {
+        "name": "Porto-Novo",
+        "coordinates": [
+          2.62,
+          6.48
+        ]
+      }
+    },
+    "208": {
+      "name": "Denmark",
+      "capital": {
+        "name": "Copenhagen",
+        "coordinates": [
+          12.58,
+          55.67
+        ]
+      }
+    },
+    "212": {
+      "name": "Dominica",
+      "capital": {
+        "name": "Roseau",
+        "coordinates": [
+          -61.4,
+          15.3
+        ]
+      }
+    },
+    "214": {
+      "name": "Dominican Republic",
+      "capital": {
+        "name": "Santo Domingo",
+        "coordinates": [
+          -69.9,
+          18.47
+        ]
+      }
+    },
+    "218": {
+      "name": "Ecuador",
+      "capital": {
+        "name": "Quito",
+        "coordinates": [
+          -78.5,
+          -0.22
+        ]
+      }
+    },
+    "222": {
+      "name": "El Salvador",
+      "capital": {
+        "name": "San Salvador",
+        "coordinates": [
+          -89.2,
+          13.7
+        ]
+      }
+    },
+    "226": {
+      "name": "Equatorial Guinea",
+      "capital": {
+        "name": "Malabo",
+        "coordinates": [
+          8.78,
+          3.75
+        ]
+      }
+    },
+    "231": {
+      "name": "Ethiopia",
+      "capital": {
+        "name": "Addis Ababa",
+        "coordinates": [
+          38.7,
+          9.03
+        ]
+      }
+    },
+    "232": {
+      "name": "Eritrea",
+      "capital": {
+        "name": "Asmara",
+        "coordinates": [
+          38.93,
+          15.33
+        ]
+      }
+    },
+    "233": {
+      "name": "Estonia",
+      "capital": {
+        "name": "Tallinn",
+        "coordinates": [
+          24.72,
+          59.43
+        ]
+      }
+    },
+    "234": {
+      "name": "Faroe Islands",
+      "capital": {
+        "name": "Tórshavn",
+        "coordinates": [
+          -6.77,
+          62.01
+        ]
+      }
+    },
+    "238": {
+      "name": "Falkland Islands (Malvinas)",
+      "capital": {
+        "name": "Stanley",
+        "coordinates": [
+          -57.85,
+          -51.7
+        ]
+      }
+    },
+    "239": {
+      "name": "South Georgia and the South Sandwich Islands",
+      "capital": {
+        "name": "King Edward Point",
+        "coordinates": [
+          -36.5,
+          -54.28
+        ]
+      }
+    },
+    "242": {
+      "name": "Fiji",
+      "capital": {
+        "name": "Suva",
+        "coordinates": [
+          178.42,
+          -18.13
+        ]
+      }
+    },
+    "246": {
+      "name": "Finland",
+      "capital": {
+        "name": "Helsinki",
+        "coordinates": [
+          24.93,
+          60.17
+        ]
+      }
+    },
+    "248": {
+      "name": "Åland Islands",
+      "capital": {
+        "name": "Mariehamn",
+        "coordinates": [
+          19.9,
+          60.12
+        ]
+      }
+    },
+    "250": {
+      "name": "France",
+      "capital": {
+        "name": "Paris",
+        "coordinates": [
+          2.33,
+          48.87
+        ]
+      }
+    },
+    "254": {
+      "name": "French Guiana",
+      "capital": {
+        "name": "Cayenne",
+        "coordinates": [
+          -52.33,
+          4.94
+        ]
+      }
+    },
+    "258": {
+      "name": "French Polynesia",
+      "capital": {
+        "name": "Papeetē",
+        "coordinates": [
+          -149.56,
+          -17.53
+        ]
+      }
+    },
+    "260": {
+      "name": "French Southern Territories",
+      "capital": {
+        "name": "Port-aux-Français",
+        "coordinates": [
+          -1.4,
+          48.81
+        ]
+      }
+    },
+    "262": {
+      "name": "Djibouti",
+      "capital": {
+        "name": "Djibouti",
+        "coordinates": [
+          43.15,
+          11.58
+        ]
+      }
+    },
+    "266": {
+      "name": "Gabon",
+      "capital": {
+        "name": "Libreville",
+        "coordinates": [
+          9.45,
+          0.38
+        ]
+      }
+    },
+    "268": {
+      "name": "Georgia",
+      "capital": {
+        "name": "Tbilisi",
+        "coordinates": [
+          44.83,
+          41.68
+        ]
+      }
+    },
+    "270": {
+      "name": "Gambia",
+      "capital": {
+        "name": "Banjul",
+        "coordinates": [
+          -16.57,
+          13.45
+        ]
+      }
+    },
+    "275": {
+      "name": "Palestine, State of",
+      "capital": {
+        "name": "Ramallah",
+        "coordinates": [
+          35.2,
+          31.9
+        ]
+      }
+    },
+    "276": {
+      "name": "Germany",
+      "capital": {
+        "name": "Berlin",
+        "coordinates": [
+          13.4,
+          52.52
+        ]
+      }
+    },
+    "288": {
+      "name": "Ghana",
+      "capital": {
+        "name": "Accra",
+        "coordinates": [
+          -0.22,
+          5.55
+        ]
+      }
+    },
+    "292": {
+      "name": "Gibraltar",
+      "capital": {
+        "name": "Gibraltar",
+        "coordinates": [
+          -5.35,
+          36.13
+        ]
+      }
+    },
+    "296": {
+      "name": "Kiribati",
+      "capital": {
+        "name": "South Tarawa",
+        "coordinates": [
+          172.98,
+          1.33
+        ]
+      }
+    },
+    "300": {
+      "name": "Greece",
+      "capital": {
+        "name": "Athens",
+        "coordinates": [
+          23.73,
+          37.98
+        ]
+      }
+    },
+    "304": {
+      "name": "Greenland",
+      "capital": {
+        "name": "Nuuk",
+        "coordinates": [
+          -51.75,
+          64.18
+        ]
+      }
+    },
+    "308": {
+      "name": "Grenada",
+      "capital": {
+        "name": "St. George's",
+        "coordinates": [
+          -64.68,
+          32.38
+        ]
+      }
+    },
+    "312": {
+      "name": "Guadeloupe",
+      "capital": {
+        "name": "Basse-Terre",
+        "coordinates": [
+          -61.73,
+          16.03
+        ]
+      }
+    },
+    "316": {
+      "name": "Guam",
+      "capital": {
+        "name": "Hagåtña",
+        "coordinates": [
+          144.75,
+          13.48
+        ]
+      }
+    },
+    "320": {
+      "name": "Guatemala",
+      "capital": {
+        "name": "Guatemala City",
+        "coordinates": [
+          -90.52,
+          14.62
+        ]
+      }
+    },
+    "324": {
+      "name": "Guinea",
+      "capital": {
+        "name": "Conakry",
+        "coordinates": [
+          -13.7,
+          9.5
+        ]
+      }
+    },
+    "328": {
+      "name": "Guyana",
+      "capital": {
+        "name": "Georgetown",
+        "coordinates": [
+          -58.15,
+          6.8
+        ]
+      }
+    },
+    "332": {
+      "name": "Haiti",
+      "capital": {
+        "name": "Port-au-Prince",
+        "coordinates": [
+          -72.33,
+          18.53
+        ]
+      }
+    },
+    "336": {
+      "name": "Holy See",
+      "capital": {
+        "name": "Vatican City",
+        "coordinates": [
+          12.45,
+          41.9
+        ]
+      }
+    },
+    "340": {
+      "name": "Honduras",
+      "capital": {
+        "name": "Tegucigalpa",
+        "coordinates": [
+          -87.22,
+          14.1
+        ]
+      }
+    },
+    "344": {
+      "name": "Hong Kong",
+      "capital": {
+        "name": "City of Victoria",
+        "coordinates": [
+          114.188,
+          22.267
+        ]
+      }
+    },
+    "348": {
+      "name": "Hungary",
+      "capital": {
+        "name": "Budapest",
+        "coordinates": [
+          19.08,
+          47.5
+        ]
+      }
+    },
+    "352": {
+      "name": "Iceland",
+      "capital": {
+        "name": "Reykjavik",
+        "coordinates": [
+          -21.95,
+          64.15
+        ]
+      }
+    },
+    "356": {
+      "name": "India",
+      "capital": {
+        "name": "New Delhi",
+        "coordinates": [
+          77.2,
+          28.6
+        ]
+      }
+    },
+    "360": {
+      "name": "Indonesia",
+      "capital": {
+        "name": "Jakarta",
+        "coordinates": [
+          106.82,
+          -6.17
+        ]
+      }
+    },
+    "364": {
+      "name": "Iran, Islamic Republic of",
+      "capital": {
+        "name": "Tehran",
+        "coordinates": [
+          51.42,
+          35.7
+        ]
+      }
+    },
+    "368": {
+      "name": "Iraq",
+      "capital": {
+        "name": "Baghdad",
+        "coordinates": [
+          44.4,
+          33.33
+        ]
+      }
+    },
+    "372": {
+      "name": "Ireland",
+      "capital": {
+        "name": "Dublin",
+        "coordinates": [
+          -6.23,
+          53.32
+        ]
+      }
+    },
+    "376": {
+      "name": "Israel",
+      "capital": {
+        "name": "Jerusalem",
+        "coordinates": [
+          35.23,
+          31.77
+        ]
+      }
+    },
+    "380": {
+      "name": "Italy",
+      "capital": {
+        "name": "Rome",
+        "coordinates": [
+          12.48,
+          41.9
+        ]
+      }
+    },
+    "384": {
+      "name": "Côte d'Ivoire",
+      "capital": {
+        "name": "Yamoussoukro",
+        "coordinates": [
+          -5.27,
+          6.82
+        ]
+      }
+    },
+    "388": {
+      "name": "Jamaica",
+      "capital": {
+        "name": "Kingston",
+        "coordinates": [
+          -76.79358,
+          17.99702
+        ]
+      }
+    },
+    "392": {
+      "name": "Japan",
+      "capital": {
+        "name": "Tokyo",
+        "coordinates": [
+          139.75,
+          35.68
+        ]
+      }
+    },
+    "398": {
+      "name": "Kazakhstan",
+      "capital": {
+        "name": "Nur-Sultan",
+        "coordinates": [
+          71.45,
+          51.16
+        ]
+      }
+    },
+    "400": {
+      "name": "Jordan",
+      "capital": {
+        "name": "Amman",
+        "coordinates": [
+          35.93,
+          31.95
+        ]
+      }
+    },
+    "404": {
+      "name": "Kenya",
+      "capital": {
+        "name": "Nairobi",
+        "coordinates": [
+          36.82,
+          -1.28
+        ]
+      }
+    },
+    "408": {
+      "name": "Korea, Democratic People's Republic of",
+      "capital": {
+        "name": "Pyongyang",
+        "coordinates": [
+          125.75,
+          39.02
+        ]
+      }
+    },
+    "410": {
+      "name": "Korea, Republic of",
+      "capital": {
+        "name": "Seoul",
+        "coordinates": [
+          126.98,
+          37.55
+        ]
+      }
+    },
+    "414": {
+      "name": "Kuwait",
+      "capital": {
+        "name": "Kuwait City",
+        "coordinates": [
+          47.97,
+          29.37
+        ]
+      }
+    },
+    "417": {
+      "name": "Kyrgyzstan",
+      "capital": {
+        "name": "Bishkek",
+        "coordinates": [
+          74.6,
+          42.87
+        ]
+      }
+    },
+    "418": {
+      "name": "Lao People's Democratic Republic",
+      "capital": {
+        "name": "Vientiane",
+        "coordinates": [
+          102.6,
+          17.97
+        ]
+      }
+    },
+    "422": {
+      "name": "Lebanon",
+      "capital": {
+        "name": "Beirut",
+        "coordinates": [
+          35.5,
+          33.87
+        ]
+      }
+    },
+    "426": {
+      "name": "Lesotho",
+      "capital": {
+        "name": "Maseru",
+        "coordinates": [
+          27.48,
+          -29.32
+        ]
+      }
+    },
+    "428": {
+      "name": "Latvia",
+      "capital": {
+        "name": "Riga",
+        "coordinates": [
+          24.1,
+          56.95
+        ]
+      }
+    },
+    "430": {
+      "name": "Liberia",
+      "capital": {
+        "name": "Monrovia",
+        "coordinates": [
+          -10.8,
+          6.3
+        ]
+      }
+    },
+    "434": {
+      "name": "Libya",
+      "capital": {
+        "name": "Tripoli",
+        "coordinates": [
+          13.17,
+          32.88
+        ]
+      }
+    },
+    "438": {
+      "name": "Liechtenstein",
+      "capital": {
+        "name": "Vaduz",
+        "coordinates": [
+          9.52,
+          47.13
+        ]
+      }
+    },
+    "440": {
+      "name": "Lithuania",
+      "capital": {
+        "name": "Riga",
+        "coordinates": [
+          24.1,
+          56.95
+        ]
+      }
+    },
+    "442": {
+      "name": "Luxembourg",
+      "capital": {
+        "name": "Luxembourg",
+        "coordinates": [
+          6.12,
+          49.6
+        ]
+      }
+    },
+    "450": {
+      "name": "Madagascar",
+      "capital": {
+        "name": "Antananarivo",
+        "coordinates": [
+          47.52,
+          -18.92
+        ]
+      }
+    },
+    "454": {
+      "name": "Malawi",
+      "capital": {
+        "name": "Lilongwe",
+        "coordinates": [
+          33.78,
+          -13.97
+        ]
+      }
+    },
+    "458": {
+      "name": "Malaysia",
+      "capital": {
+        "name": "Kuala Lumpur",
+        "coordinates": [
+          101.7,
+          3.17
+        ]
+      }
+    },
+    "462": {
+      "name": "Maldives",
+      "capital": {
+        "name": "Malé",
+        "coordinates": [
+          73.51,
+          4.17
+        ]
+      }
+    },
+    "466": {
+      "name": "Mali",
+      "capital": {
+        "name": "Bamako",
+        "coordinates": [
+          -8,
+          12.65
+        ]
+      }
+    },
+    "470": {
+      "name": "Malta",
+      "capital": {
+        "name": "Valletta",
+        "coordinates": [
+          14.5,
+          35.88
+        ]
+      }
+    },
+    "474": {
+      "name": "Martinique",
+      "capital": {
+        "name": "Fort-de-France",
+        "coordinates": [
+          -61.08,
+          14.6
+        ]
+      }
+    },
+    "478": {
+      "name": "Mauritania",
+      "capital": {
+        "name": "Nouakchott",
+        "coordinates": [
+          -15.97,
+          18.07
+        ]
+      }
+    },
+    "480": {
+      "name": "Mauritius",
+      "capital": {
+        "name": "Port Louis",
+        "coordinates": [
+          57.48,
+          -20.15
+        ]
+      }
+    },
+    "484": {
+      "name": "Mexico",
+      "capital": {
+        "name": "Mexico City",
+        "coordinates": [
+          -99.13,
+          19.43
+        ]
+      }
+    },
+    "492": {
+      "name": "Monaco",
+      "capital": {
+        "name": "Monaco",
+        "coordinates": [
+          7.42,
+          43.73
+        ]
+      }
+    },
+    "496": {
+      "name": "Mongolia",
+      "capital": {
+        "name": "Ulan Bator",
+        "coordinates": [
+          106.91,
+          47.92
+        ]
+      }
+    },
+    "498": {
+      "name": "Moldova, Republic of",
+      "capital": {
+        "name": "Chișinău",
+        "coordinates": [
+          28.9,
+          47.01
+        ]
+      }
+    },
+    "499": {
+      "name": "Montenegro",
+      "capital": {
+        "name": "Podgorica",
+        "coordinates": [
+          19.27,
+          42.43
+        ]
+      }
+    },
+    "500": {
+      "name": "Montserrat",
+      "capital": {
+        "name": "Plymouth",
+        "coordinates": [
+          -62.22,
+          16.7
+        ]
+      }
+    },
+    "504": {
+      "name": "Morocco",
+      "capital": {
+        "name": "Rabat",
+        "coordinates": [
+          -6.82,
+          34.02
+        ]
+      }
+    },
+    "508": {
+      "name": "Mozambique",
+      "capital": {
+        "name": "Maputo",
+        "coordinates": [
+          32.58,
+          -25.95
+        ]
+      }
+    },
+    "512": {
+      "name": "Oman",
+      "capital": {
+        "name": "Muscat",
+        "coordinates": [
+          58.58,
+          23.62
+        ]
+      }
+    },
+    "516": {
+      "name": "Namibia",
+      "capital": {
+        "name": "Windhoek",
+        "coordinates": [
+          17.08,
+          -22.57
+        ]
+      }
+    },
+    "520": {
+      "name": "Nauru",
+      "capital": {
+        "name": "Yaren",
+        "coordinates": [
+          166.92,
+          -0.55
+        ]
+      }
+    },
+    "524": {
+      "name": "Nepal",
+      "capital": {
+        "name": "Kathmandu",
+        "coordinates": [
+          85.32,
+          27.72
+        ]
+      }
+    },
+    "528": {
+      "name": "Netherlands, Kingdom of the",
+      "capital": {
+        "name": "Amsterdam",
+        "coordinates": [
+          4.92,
+          52.35
+        ]
+      }
+    },
+    "531": {
+      "name": "Curaçao",
+      "capital": {
+        "name": "Willemstad",
+        "coordinates": [
+          -68.92,
+          12.1
+        ]
+      }
+    },
+    "533": {
+      "name": "Aruba",
+      "capital": {
+        "name": "Oranjestad",
+        "coordinates": [
+          -70.03,
+          12.52
+        ]
+      }
+    },
+    "534": {
+      "name": "Sint Maarten (Dutch part)",
+      "capital": {
+        "name": "Philipsburg",
+        "coordinates": [
+          -63.03,
+          18.02
+        ]
+      }
+    },
+    "535": {
+      "name": "Bonaire, Sint Eustatius and Saba",
+      "capital": {
+        "name": "Kralendijk",
+        "coordinates": [
+          -68.27,
+          12.14
+        ]
+      }
+    },
+    "540": {
+      "name": "New Caledonia",
+      "capital": {
+        "name": "Nouméa",
+        "coordinates": [
+          166.45,
+          -22.27
+        ]
+      }
+    },
+    "548": {
+      "name": "Vanuatu",
+      "capital": {
+        "name": "Port Vila",
+        "coordinates": [
+          168.32,
+          -17.73
+        ]
+      }
+    },
+    "554": {
+      "name": "New Zealand",
+      "capital": {
+        "name": "Wellington",
+        "coordinates": [
+          174.78,
+          -41.3
+        ]
+      }
+    },
+    "558": {
+      "name": "Nicaragua",
+      "capital": {
+        "name": "Managua",
+        "coordinates": [
+          -86.25,
+          12.13
+        ]
+      }
+    },
+    "562": {
+      "name": "Niger",
+      "capital": {
+        "name": "Niamey",
+        "coordinates": [
+          2.12,
+          13.52
+        ]
+      }
+    },
+    "566": {
+      "name": "Nigeria",
+      "capital": {
+        "name": "Abuja",
+        "coordinates": [
+          7.53,
+          9.08
+        ]
+      }
+    },
+    "570": {
+      "name": "Niue",
+      "capital": {
+        "name": "Alofi",
+        "coordinates": [
+          -169.92,
+          -19.02
+        ]
+      }
+    },
+    "574": {
+      "name": "Norfolk Island",
+      "capital": {
+        "name": "Kingston",
+        "coordinates": [
+          167.97,
+          -29.05
+        ]
+      }
+    },
+    "578": {
+      "name": "Norway",
+      "capital": {
+        "name": "Oslo",
+        "coordinates": [
+          10.75,
+          59.92
+        ]
+      }
+    },
+    "580": {
+      "name": "Northern Mariana Islands",
+      "capital": {
+        "name": "Saipan",
+        "coordinates": [
+          145.75,
+          15.2
+        ]
+      }
+    },
+    "583": {
+      "name": "Micronesia, Federated States of",
+      "capital": {
+        "name": "Palikir",
+        "coordinates": [
+          158.15,
+          6.92
+        ]
+      }
+    },
+    "584": {
+      "name": "Marshall Islands",
+      "capital": {
+        "name": "Majuro",
+        "coordinates": [
+          171.38,
+          7.1
+        ]
+      }
+    },
+    "585": {
+      "name": "Palau",
+      "capital": {
+        "name": "Ngerulmud",
+        "coordinates": [
+          134.62,
+          7.5
+        ]
+      }
+    },
+    "586": {
+      "name": "Pakistan",
+      "capital": {
+        "name": "Islamabad",
+        "coordinates": [
+          73.05,
+          33.68
+        ]
+      }
+    },
+    "591": {
+      "name": "Panama",
+      "capital": {
+        "name": "Panama City",
+        "coordinates": [
+          -79.53,
+          8.97
+        ]
+      }
+    },
+    "598": {
+      "name": "Papua New Guinea",
+      "capital": {
+        "name": "Port Moresby",
+        "coordinates": [
+          147.18,
+          -9.45
+        ]
+      }
+    },
+    "600": {
+      "name": "Paraguay",
+      "capital": {
+        "name": "Asunción",
+        "coordinates": [
+          -57.57,
+          -25.28
+        ]
+      }
+    },
+    "604": {
+      "name": "Peru",
+      "capital": {
+        "name": "Lima",
+        "coordinates": [
+          -77.05,
+          -12.05
+        ]
+      }
+    },
+    "608": {
+      "name": "Philippines",
+      "capital": {
+        "name": "Manila",
+        "coordinates": [
+          120.97,
+          14.6
+        ]
+      }
+    },
+    "612": {
+      "name": "Pitcairn",
+      "capital": {
+        "name": "Adamstown",
+        "coordinates": [
+          -130.08,
+          -25.07
+        ]
+      }
+    },
+    "616": {
+      "name": "Poland",
+      "capital": {
+        "name": "Warsaw",
+        "coordinates": [
+          21,
+          52.25
+        ]
+      }
+    },
+    "620": {
+      "name": "Portugal",
+      "capital": {
+        "name": "Lisbon",
+        "coordinates": [
+          -9.13,
+          38.72
+        ]
+      }
+    },
+    "624": {
+      "name": "Guinea-Bissau",
+      "capital": {
+        "name": "Bissau",
+        "coordinates": [
+          -15.58,
+          11.85
+        ]
+      }
+    },
+    "626": {
+      "name": "Timor-Leste",
+      "capital": {
+        "name": "Dili",
+        "coordinates": [
+          125.6,
+          -8.58
+        ]
+      }
+    },
+    "630": {
+      "name": "Puerto Rico",
+      "capital": {
+        "name": "San Juan",
+        "coordinates": [
+          -66.12,
+          18.47
+        ]
+      }
+    },
+    "634": {
+      "name": "Qatar",
+      "capital": {
+        "name": "Doha",
+        "coordinates": [
+          51.53,
+          25.28
+        ]
+      }
+    },
+    "638": {
+      "name": "Réunion",
+      "capital": {
+        "name": "Saint-Denis",
+        "coordinates": [
+          55.45,
+          -20.88
+        ]
+      }
+    },
+    "642": {
+      "name": "Romania",
+      "capital": {
+        "name": "Bucharest",
+        "coordinates": [
+          26.1,
+          44.43
+        ]
+      }
+    },
+    "643": {
+      "name": "Russian Federation",
+      "capital": {
+        "name": "Moscow",
+        "coordinates": [
+          37.6,
+          55.75
+        ]
+      }
+    },
+    "646": {
+      "name": "Rwanda",
+      "capital": {
+        "name": "Kigali",
+        "coordinates": [
+          30.05,
+          -1.95
+        ]
+      }
+    },
+    "652": {
+      "name": "Saint Barthélemy",
+      "capital": {
+        "name": "Gustavia",
+        "coordinates": [
+          -62.85,
+          17.88
+        ]
+      }
+    },
+    "654": {
+      "name": "Saint Helena, Ascension and Tristan da Cunha",
+      "capital": {
+        "name": "Jamestown",
+        "coordinates": [
+          -5.72,
+          -15.93
+        ]
+      }
+    },
+    "659": {
+      "name": "Saint Kitts and Nevis",
+      "capital": {
+        "name": "Basseterre",
+        "coordinates": [
+          -62.72,
+          17.3
+        ]
+      }
+    },
+    "660": {
+      "name": "Anguilla",
+      "capital": {
+        "name": "The Valley",
+        "coordinates": [
+          -63.05,
+          18.22
+        ]
+      }
+    },
+    "662": {
+      "name": "Saint Lucia",
+      "capital": {
+        "name": "Castries",
+        "coordinates": [
+          -61,
+          14
+        ]
+      }
+    },
+    "663": {
+      "name": "Saint Martin (French part)",
+      "capital": {
+        "name": "Marigot",
+        "coordinates": [
+          -63.08,
+          18.07
+        ]
+      }
+    },
+    "666": {
+      "name": "Saint Pierre and Miquelon",
+      "capital": {
+        "name": "Saint-Pierre",
+        "coordinates": [
+          -56.18,
+          46.77
+        ]
+      }
+    },
+    "670": {
+      "name": "Saint Vincent and the Grenadines",
+      "capital": {
+        "name": "Kingstown",
+        "coordinates": [
+          -61.22,
+          13.13
+        ]
+      }
+    },
+    "674": {
+      "name": "San Marino",
+      "capital": {
+        "name": "City of San Marino",
+        "coordinates": [
+          12.45,
+          43.94
+        ]
+      }
+    },
+    "678": {
+      "name": "Sao Tome and Principe",
+      "capital": {
+        "name": "São Tomé",
+        "coordinates": [
+          6.73,
+          0.34
+        ]
+      }
+    },
+    "682": {
+      "name": "Saudi Arabia",
+      "capital": {
+        "name": "Riyadh",
+        "coordinates": [
+          46.7,
+          24.65
+        ]
+      }
+    },
+    "686": {
+      "name": "Senegal",
+      "capital": {
+        "name": "Dakar",
+        "coordinates": [
+          -17.63,
+          14.73
+        ]
+      }
+    },
+    "688": {
+      "name": "Serbia",
+      "capital": {
+        "name": "Belgrade",
+        "coordinates": [
+          20.5,
+          44.83
+        ]
+      }
+    },
+    "690": {
+      "name": "Seychelles",
+      "capital": {
+        "name": "Victoria",
+        "coordinates": [
+          55.45,
+          -4.62
+        ]
+      }
+    },
+    "694": {
+      "name": "Sierra Leone",
+      "capital": {
+        "name": "Freetown",
+        "coordinates": [
+          -13.23,
+          8.48
+        ]
+      }
+    },
+    "702": {
+      "name": "Singapore",
+      "capital": {
+        "name": "Singapore",
+        "coordinates": [
+          103.85,
+          1.28
+        ]
+      }
+    },
+    "703": {
+      "name": "Slovakia",
+      "capital": {
+        "name": "Bratislava",
+        "coordinates": [
+          17.12,
+          48.15
+        ]
+      }
+    },
+    "704": {
+      "name": "Viet Nam",
+      "capital": {
+        "name": "Hanoi",
+        "coordinates": [
+          105.85,
+          21.03
+        ]
+      }
+    },
+    "705": {
+      "name": "Slovenia",
+      "capital": {
+        "name": "Ljubljana",
+        "coordinates": [
+          14.52,
+          46.05
+        ]
+      }
+    },
+    "706": {
+      "name": "Somalia",
+      "capital": {
+        "name": "Mogadishu",
+        "coordinates": [
+          45.33,
+          2.07
+        ]
+      }
+    },
+    "710": {
+      "name": "South Africa",
+      "capital": {
+        "name": "Pretoria",
+        "coordinates": [
+          28.22,
+          -25.7
+        ]
+      }
+    },
+    "716": {
+      "name": "Zimbabwe",
+      "capital": {
+        "name": "Harare",
+        "coordinates": [
+          31.03,
+          -17.82
+        ]
+      }
+    },
+    "724": {
+      "name": "Spain",
+      "capital": {
+        "name": "Madrid",
+        "coordinates": [
+          -3.68,
+          40.4
+        ]
+      }
+    },
+    "728": {
+      "name": "South Sudan",
+      "capital": {
+        "name": "Juba",
+        "coordinates": [
+          31.62,
+          4.85
+        ]
+      }
+    },
+    "729": {
+      "name": "Sudan",
+      "capital": {
+        "name": "Khartoum",
+        "coordinates": [
+          32.53,
+          15.6
+        ]
+      }
+    },
+    "732": {
+      "name": "Western Sahara",
+      "capital": {
+        "name": "El Aaiún",
+        "coordinates": [
+          27.14,
+          -13.28
+        ]
+      }
+    },
+    "740": {
+      "name": "Suriname",
+      "capital": {
+        "name": "Paramaribo",
+        "coordinates": [
+          -55.17,
+          5.83
+        ]
+      }
+    },
+    "744": {
+      "name": "Svalbard and Jan Mayen",
+      "capital": {
+        "name": "Longyearbyen",
+        "coordinates": [
+          15.63,
+          78.22
+        ]
+      }
+    },
+    "748": {
+      "name": "Eswatini",
+      "capital": {
+        "name": "Mbabane",
+        "coordinates": [
+          31.13,
+          -26.32
+        ]
+      }
+    },
+    "752": {
+      "name": "Sweden",
+      "capital": {
+        "name": "Stockholm",
+        "coordinates": [
+          18.05,
+          59.33
+        ]
+      }
+    },
+    "756": {
+      "name": "Switzerland",
+      "capital": {
+        "name": "Bern",
+        "coordinates": [
+          7.47,
+          46.92
+        ]
+      }
+    },
+    "760": {
+      "name": "Syrian Arab Republic",
+      "capital": {
+        "name": "Damascus",
+        "coordinates": [
+          36.3,
+          33.5
+        ]
+      }
+    },
+    "762": {
+      "name": "Tajikistan",
+      "capital": {
+        "name": "Dushanbe",
+        "coordinates": [
+          68.77,
+          38.55
+        ]
+      }
+    },
+    "764": {
+      "name": "Thailand",
+      "capital": {
+        "name": "Bangkok",
+        "coordinates": [
+          100.52,
+          13.75
+        ]
+      }
+    },
+    "768": {
+      "name": "Togo",
+      "capital": {
+        "name": "Lomé",
+        "coordinates": [
+          1.21,
+          6.14
+        ]
+      }
+    },
+    "772": {
+      "name": "Tokelau",
+      "capital": {
+        "name": "Fakaofo",
+        "coordinates": [
+          -171.22,
+          -9.38
+        ]
+      }
+    },
+    "776": {
+      "name": "Tonga",
+      "capital": {
+        "name": "Nuku'alofa",
+        "coordinates": [
+          -175.2,
+          -21.13
+        ]
+      }
+    },
+    "780": {
+      "name": "Trinidad and Tobago",
+      "capital": {
+        "name": "Port of Spain",
+        "coordinates": [
+          -61.52,
+          10.65
+        ]
+      }
+    },
+    "784": {
+      "name": "United Arab Emirates",
+      "capital": {
+        "name": "Abu Dhabi",
+        "coordinates": [
+          54.37,
+          24.47
+        ]
+      }
+    },
+    "788": {
+      "name": "Tunisia",
+      "capital": {
+        "name": "Tunis",
+        "coordinates": [
+          10.18,
+          36.8
+        ]
+      }
+    },
+    "792": {
+      "name": "Türkiye",
+      "capital": {
+        "name": "Ankara",
+        "coordinates": [
+          32.87,
+          39.93
+        ]
+      }
+    },
+    "795": {
+      "name": "Turkmenistan",
+      "capital": {
+        "name": "Ashgabat",
+        "coordinates": [
+          58.38,
+          37.95
+        ]
+      }
+    },
+    "796": {
+      "name": "Turks and Caicos Islands",
+      "capital": {
+        "name": "Cockburn Town",
+        "coordinates": [
+          -71.14,
+          21.46
+        ]
+      }
+    },
+    "798": {
+      "name": "Tuvalu",
+      "capital": {
+        "name": "Funafuti",
+        "coordinates": [
+          179.22,
+          -8.52
+        ]
+      }
+    },
+    "800": {
+      "name": "Uganda",
+      "capital": {
+        "name": "Kampala",
+        "coordinates": [
+          32.55,
+          0.32
+        ]
+      }
+    },
+    "804": {
+      "name": "Ukraine",
+      "capital": {
+        "name": "Kyiv",
+        "coordinates": [
+          30.52,
+          50.43
+        ]
+      }
+    },
+    "807": {
+      "name": "North Macedonia",
+      "capital": {
+        "name": "Skopje",
+        "coordinates": [
+          21.43,
+          42
+        ]
+      }
+    },
+    "818": {
+      "name": "Egypt",
+      "capital": {
+        "name": "Cairo",
+        "coordinates": [
+          31.25,
+          30.05
+        ]
+      }
+    },
+    "826": {
+      "name": "United Kingdom",
+      "capital": {
+        "name": "London",
+        "coordinates": [
+          -0.08,
+          51.5
+        ]
+      }
+    },
+    "831": {
+      "name": "Guernsey",
+      "capital": {
+        "name": "St. Peter Port",
+        "coordinates": [
+          -2.54,
+          49.45
+        ]
+      }
+    },
+    "832": {
+      "name": "Jersey",
+      "capital": {
+        "name": "Saint Helier",
+        "coordinates": [
+          -2.1,
+          49.18
+        ]
+      }
+    },
+    "833": {
+      "name": "Isle of Man",
+      "capital": {
+        "name": "Douglas",
+        "coordinates": [
+          -4.48,
+          54.15
+        ]
+      }
+    },
+    "834": {
+      "name": "Tanzania, United Republic of",
+      "capital": {
+        "name": "Dodoma",
+        "coordinates": [
+          35.75,
+          -6.16
+        ]
+      }
+    },
+    "840": {
+      "name": "United States of America",
+      "capital": {
+        "name": "Washington, D.C.",
+        "coordinates": [
+          -77.05,
+          38.89
+        ]
+      },
+      "regions": {
+        "texas": {
+          "name": "Texas",
+          "coordinates": [
+            -97.7431,
+            30.2672
+          ]
+        }
+      }
+    },
+    "850": {
+      "name": "Virgin Islands (U.S.)",
+      "capital": {
+        "name": "Charlotte Amalie",
+        "coordinates": [
+          -64.93,
+          18.35
+        ]
+      }
+    },
+    "854": {
+      "name": "Burkina Faso",
+      "capital": {
+        "name": "Ouagadougou",
+        "coordinates": [
+          -1.52,
+          12.37
+        ]
+      }
+    },
+    "858": {
+      "name": "Uruguay",
+      "capital": {
+        "name": "Montevideo",
+        "coordinates": [
+          -56.17,
+          -34.85
+        ]
+      }
+    },
+    "860": {
+      "name": "Uzbekistan",
+      "capital": {
+        "name": "Tashkent",
+        "coordinates": [
+          69.25,
+          41.32
+        ]
+      }
+    },
+    "862": {
+      "name": "Venezuela, Bolivarian Republic of",
+      "capital": {
+        "name": "Caracas",
+        "coordinates": [
+          -66.87,
+          10.48
+        ]
+      }
+    },
+    "876": {
+      "name": "Wallis and Futuna",
+      "capital": {
+        "name": "Mata-Utu",
+        "coordinates": [
+          -171.93,
+          -13.95
+        ]
+      }
+    },
+    "882": {
+      "name": "Samoa",
+      "capital": {
+        "name": "Apia",
+        "coordinates": [
+          -171.77,
+          -13.82
+        ]
+      }
+    },
+    "887": {
+      "name": "Yemen",
+      "capital": {
+        "name": "Sana'a",
+        "coordinates": [
+          44.19,
+          15.37
+        ]
+      }
+    },
+    "894": {
+      "name": "Zambia",
+      "capital": {
+        "name": "Lusaka",
+        "coordinates": [
+          28.28,
+          -15.42
+        ]
+      }
+    },
+    "004": {
+      "name": "Afghanistan",
+      "capital": {
+        "name": "Kabul",
+        "coordinates": [
+          69.18,
+          34.52
+        ]
+      }
+    },
+    "008": {
+      "name": "Albania",
+      "capital": {
+        "name": "Tirana",
+        "coordinates": [
+          19.82,
+          41.32
+        ]
+      }
+    },
+    "012": {
+      "name": "Algeria",
+      "capital": {
+        "name": "Algiers",
+        "coordinates": [
+          3.05,
+          36.75
+        ]
+      }
+    },
+    "016": {
+      "name": "American Samoa",
+      "capital": {
+        "name": "Pago Pago",
+        "coordinates": [
+          -170.7,
+          -14.27
+        ]
+      }
+    },
+    "020": {
+      "name": "Andorra",
+      "capital": {
+        "name": "Andorra la Vella",
+        "coordinates": [
+          1.52,
+          42.5
+        ]
+      }
+    },
+    "024": {
+      "name": "Angola",
+      "capital": {
+        "name": "Luanda",
+        "coordinates": [
+          13.22,
+          -8.83
+        ]
+      }
+    },
+    "028": {
+      "name": "Antigua and Barbuda",
+      "capital": {
+        "name": "Saint John's",
+        "coordinates": [
+          -61.85,
+          17.12
+        ]
+      }
+    },
+    "032": {
+      "name": "Argentina",
+      "capital": {
+        "name": "Buenos Aires",
+        "coordinates": [
+          -58.67,
+          -34.58
+        ]
+      }
+    },
+    "051": {
+      "name": "Armenia",
+      "capital": {
+        "name": "Yerevan",
+        "coordinates": [
+          44.5,
+          40.17
+        ]
+      }
+    },
+    "036": {
+      "name": "Australia",
+      "capital": {
+        "name": "Canberra",
+        "coordinates": [
+          149.13,
+          -35.27
+        ]
+      }
+    },
+    "040": {
+      "name": "Austria",
+      "capital": {
+        "name": "Vienna",
+        "coordinates": [
+          16.37,
+          48.2
+        ]
+      }
+    },
+    "031": {
+      "name": "Azerbaijan",
+      "capital": {
+        "name": "Baku",
+        "coordinates": [
+          49.87,
+          40.38
+        ]
+      }
+    },
+    "044": {
+      "name": "Bahamas",
+      "capital": {
+        "name": "Nassau",
+        "coordinates": [
+          -77.35,
+          25.08
+        ]
+      }
+    },
+    "048": {
+      "name": "Bahrain",
+      "capital": {
+        "name": "Manama",
+        "coordinates": [
+          50.57,
+          26.23
+        ]
+      }
+    },
+    "050": {
+      "name": "Bangladesh",
+      "capital": {
+        "name": "Dhaka",
+        "coordinates": [
+          90.4,
+          23.72
+        ]
+      }
+    },
+    "052": {
+      "name": "Barbados",
+      "capital": {
+        "name": "Bridgetown",
+        "coordinates": [
+          -59.62,
+          13.1
+        ]
+      }
+    },
+    "056": {
+      "name": "Belgium",
+      "capital": {
+        "name": "Brussels",
+        "coordinates": [
+          4.33,
+          50.83
+        ]
+      }
+    },
+    "084": {
+      "name": "Belize",
+      "capital": {
+        "name": "Belmopan",
+        "coordinates": [
+          -88.77,
+          17.25
+        ]
+      }
+    },
+    "060": {
+      "name": "Bermuda",
+      "capital": {
+        "name": "Hamilton",
+        "coordinates": [
+          -64.78,
+          32.28
+        ]
+      }
+    },
+    "064": {
+      "name": "Bhutan",
+      "capital": {
+        "name": "Thimphu",
+        "coordinates": [
+          89.63,
+          27.47
+        ]
+      }
+    },
+    "068": {
+      "name": "Bolivia, Plurinational State of",
+      "capital": {
+        "name": "Sucre",
+        "coordinates": [
+          -65.26,
+          -19.02
+        ]
+      }
+    },
+    "070": {
+      "name": "Bosnia and Herzegovina",
+      "capital": {
+        "name": "Sarajevo",
+        "coordinates": [
+          18.42,
+          43.87
+        ]
+      }
+    },
+    "072": {
+      "name": "Botswana",
+      "capital": {
+        "name": "Gaborone",
+        "coordinates": [
+          25.9,
+          -24.63
+        ]
+      }
+    },
+    "076": {
+      "name": "Brazil",
+      "capital": {
+        "name": "Brasília",
+        "coordinates": [
+          -47.88,
+          -15.79
+        ]
+      }
+    },
+    "086": {
+      "name": "British Indian Ocean Territory",
+      "capital": {
+        "name": "Diego Garcia",
+        "coordinates": [
+          72.4,
+          -7.3
+        ]
+      }
+    },
+    "096": {
+      "name": "Brunei Darussalam",
+      "capital": {
+        "name": "Bandar Seri Begawan",
+        "coordinates": [
+          114.93,
+          4.88
+        ]
+      }
+    },
+    "090": {
+      "name": "Solomon Islands",
+      "capital": {
+        "name": "Honiara",
+        "coordinates": [
+          159.95,
+          -9.43
+        ]
+      }
+    },
+    "092": {
+      "name": "Virgin Islands (British)",
+      "capital": {
+        "name": "Road Town",
+        "coordinates": [
+          -64.62,
+          18.42
+        ]
+      }
+    }
+  }
+}
