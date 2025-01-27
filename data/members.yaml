@@ -2,7 +2,7 @@ members:
   - name: "Daniel Izquierdo Cortázar"
     role: "President"
     location: "Spain"
-    area: "spain"
+    area: "Spain"
 
   - name: "Yuki Hattori"
     role: "Vice President"
@@ -31,8 +31,8 @@ members:
 
   - name: "Danese Cooper"
     role: "Board Member"
-    location: "United States of America"
-    area: "United States of America"
+    location: "Ireland"
+    area: "Ireland"
 
   - name: "Clare Dillon"
     role: "Board Member"
@@ -82,6 +82,7 @@ members:
 
   - name: "Igor Zubaiurre"
     role: "Member"
+    location: "Spain"
     area: "Spain"
 
   - name: "Isabel Drost-Fromm"
