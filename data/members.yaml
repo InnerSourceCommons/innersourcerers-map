@@ -1,52 +1,87 @@
 members:
-  - name: "Daniel Izquierdo Cortázar"
-    role: "President"
-    location: "Spain"
-    area: "Spain"
-
-  - name: "Yuki Hattori"
-    role: "Vice President"
-    location: "Japan"
-    area: "japan"
-
   - name: "Matt Cobby"
     role: "Secretary"
-    location: "Australia"
     area: "Australia"
-
-  - name: "Katie Schueths"
-    role: "Assistant Secretary"
-    location: "United States of America"
-    area: "United States of America"
-
-  - name: "Tom Sadler"
-    role: "Treasurer"
-    location: "United Kingdom"
-    area: "GBR"
-
-  - name: "Georg Grütter"
-    role: "Assistant Treasurer"
-    location: "Germany"
-    area: "germany"
-
-  - name: "Danese Cooper"
-    role: "Board Member"
-    location: "Ireland"
-    area: "Ireland"
-
-  - name: "Clare Dillon"
-    role: "Board Member"
-    location: "Ireland"
-    area: "Ireland"
-
-  - name: "Sebastian Spier"
-    role: "Board Member"
-    location: "Germany"
-    area: "germany" 
 
   - name: "Ada Dai"
     role: "Member"
     area: "China"
+
+  - name: "Fei Wan"
+    role: "Member"
+    area: "China"
+
+  - name: "Jerry Tan"
+    role: "Member"
+    area: "China"
+
+  - name: "Willem Jiang"
+    role: "Member"
+    area: "China"
+
+  - name: "Thomas Froment"
+    role: "Member"
+    area: "France"
+
+  - name: "Georg Grütter"
+    role: "Assistant Treasurer"
+    area: "Germany"
+
+  - name: "Sebastian Spier"
+    role: "Board Member"
+    area: "Germany"
+
+  - name: "Guilherme Dellagustin"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Isabel Drost-Fromm"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Maximilian Capraro"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Tom Sadler"
+    role: "Treasurer"
+    area: "United Kingdom"
+
+  - name: "Danese Cooper"
+    role: "Board Member"
+    area: "Ireland"
+
+  - name: "Clare Dillon"
+    role: "Board Member"
+    area: "Ireland"
+
+  - name: "Cristina Coffey"
+    role: "Member"
+    area: "Ireland"
+
+  - name: "Klaas-Jan Stol"
+    role: "Member"
+    area: "Ireland"
+
+  - name: "Yuki Hattori"
+    role: "Vice President"
+    area: "japan"
+
+  - name: "Daniel Izquierdo Cortázar"
+    role: "President"
+    area: "Spain"
+
+  - name: "Igor Zubaiurre"
+    role: "Member"
+    area: "Spain"
+
+  - name: "Mishari Muqbil"
+    role: "Member"
+    area: "Thailand"
+
+  - name: "Katie Schueths"
+    role: "Assistant Secretary"
+    area: "United States of America"
 
   - name: "Addie Girouard"
     role: "Member"
@@ -68,27 +103,6 @@ members:
     role: "Member"
     area: "United States of America"
 
-  - name: "Cristina Coffey"
-    role: "Member"
-    area: "Ireland"
-
-  - name: "Fei Wan"
-    role: "Member"
-    area: "China"
-
-  - name: "Guilherme Dellagustin"
-    role: "Member"
-    area: "Germany"
-
-  - name: "Igor Zubaiurre"
-    role: "Member"
-    location: "Spain"
-    area: "Spain"
-
-  - name: "Isabel Drost-Fromm"
-    role: "Member"
-    area: "Germany"
-
   - name: "Jacob Green"
     role: "Member"
     area: "United States of America"
@@ -97,25 +111,9 @@ members:
     role: "Member"
     area: "United States of America"
 
-  - name: "Jerry Tan"
-    role: "Member"
-    area: "China"
-
   - name: "Justin Gosses"
     role: "Member"
     area: "United States of America"
-
-  - name: "Klaas-Jan Stol"
-    role: "Member"
-    area: "Ireland"
-
-  - name: "Maximilian Capraro"
-    role: "Member"
-    area: "Germany"
-
-  - name: "Mishari Muqbil"
-    role: "Member"
-    area: "Thailand"
 
   - name: "Russell Rutledge"
     role: "Executive Director"
@@ -125,17 +123,9 @@ members:
     role: "Member"
     area: "United States of America"
 
-  - name: "Thomas Froment"
-    role: "Member"
-    area: "France"
-
   - name: "Tim Yao"
     role: "Member"
     area: "United States of America"
-
-  - name: "Willem Jiang"
-    role: "Member"
-    area: "China"
 
   - name: "Zack Koppert"
     role: "Member"

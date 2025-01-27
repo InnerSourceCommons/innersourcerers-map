@@ -184,8 +184,14 @@ function updateMembersList() {
     // アクティブな地域を追跡
     let activeCard = null;
 
-    // 地域ごとにカードを作成
-    Object.entries(groupedMembers).forEach(([area, areaMembers]) => {
+    // エリアをアルファベット順にソート
+    const sortedAreas = Object.keys(groupedMembers).sort((a, b) => {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
+
+    // 地域ごとにカードを作成（ソートされた順序で）
+    sortedAreas.forEach(area => {
+        const areaMembers = groupedMembers[area];
         const regionCard = document.createElement('div');
         regionCard.className = 'region-card';
         
@@ -212,12 +218,35 @@ function updateMembersList() {
         regionCard.setAttribute('data-area', area);
         regionCard.setAttribute('data-country-code', countryCode);
         regionCard.id = `region-${countryCode}`;
+
+        // メンバーを役職でソート
+        const sortedMembers = areaMembers.sort((a, b) => {
+            // 役職の優先順位を定義
+            const rolePriority = {
+                'President': 1,
+                'Vice President': 2,
+                'Secretary': 3,
+                'Assistant Secretary': 4,
+                'Treasurer': 5,
+                'Assistant Treasurer': 6,
+                'Executive Director': 7,
+                'Board Member': 8,
+                'Member': 9
+            };
+            
+            // 役職が同じ場合は名前でソート
+            if (rolePriority[a.role] === rolePriority[b.role]) {
+                return a.name.localeCompare(b.name);
+            }
+            
+            return rolePriority[a.role] - rolePriority[b.role];
+        });
         
         regionCard.innerHTML = `
             <h3>${areaData.name || area}</h3>
-            <div class="member-count">${areaMembers.length} member(s)</div>
+            <div class="member-count">${sortedMembers.length} member(s)</div>
             <div class="member-list">
-                ${areaMembers.map(member => `
+                ${sortedMembers.map(member => `
                     <div class="member-item">
                         <div class="member-name">${member.name}</div>
                         <div class="member-role">${member.role}</div>
@@ -252,12 +281,31 @@ function updateMembersList() {
 async function initGlobe() {
     console.log('Initializing globe...'); // デバッグ用ログ
     const container = document.getElementById('globe-container');
+    const membersPanel = document.getElementById('members-panel');
     
     try {
         console.log('Loading world data...'); // デバッグ用ログ
         // 世界地図データの読み込み
         const worldData = await fetch('https://unpkg.com/world-atlas/countries-110m.json').then(res => res.json());
         const worldCountries = topojson.feature(worldData, worldData.objects.countries);
+
+        // 右ペインの幅を考慮してコンテナの位置を調整
+        function updateGlobePosition() {
+            const panelWidth = membersPanel ? membersPanel.offsetWidth : 0;
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            
+            // 地球儀の表示領域を計算（右ペインを除いた領域の中央）
+            const globeAreaWidth = windowWidth - panelWidth;
+            container.style.width = `${globeAreaWidth}px`;
+            container.style.height = `${windowHeight}px`;
+            container.style.position = 'absolute';
+            container.style.left = '0';
+            container.style.top = '0';
+        }
+
+        // 初期位置の設定
+        updateGlobePosition();
 
         globe = Globe()(container)
             .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
@@ -384,8 +432,9 @@ async function initGlobe() {
 
         // ウィンドウリサイズ時の処理
         window.addEventListener('resize', () => {
-            globe.width([window.innerWidth]);
-            globe.height([window.innerHeight]);
+            updateGlobePosition();
+            globe.width([container.offsetWidth]);
+            globe.height([container.offsetHeight]);
         });
 
     } catch (error) {
@@ -403,25 +452,25 @@ function getAreaNameFromCountryCode(countryCode) {
 }
 
 // 地球儀のハイライトを更新
-function updateGlobeHighlight(location, states = null) {
+function updateGlobeHighlight(area, states = null) {
     globe.polygonLabel(({ properties: d, id }) => {
-        if (location === 'USA') {
+        if (area === 'USA') {
             // USAの場合、選択された州のみラベル表示
             const stateFips = properties?.STATEFP;
-            const stateLocation = states?.find(state => 
-                AREA_DATA[members.find(m => m.location === state).area].center[1] === properties?.INTPTLAT 
-                && AREA_DATA[members.find(m => m.location === state).area].center[0] === properties?.INTPTLON
+            const stateArea = states?.find(state => 
+                AREA_DATA[members.find(m => m.area === state).area].center[1] === properties?.INTPTLAT 
+                && AREA_DATA[members.find(m => m.area === state).area].center[0] === properties?.INTPTLON
             );
             
-            if (stateLocation) {
-                const stateMembers = members.filter(m => m.location === stateLocation);
-                return createLabel(stateLocation, stateMembers);
+            if (stateArea) {
+                const stateMembers = members.filter(m => m.area === stateArea);
+                return createLabel(stateArea, stateMembers);
             }
         } else {
-            const memberArea = members.find(m => m.location === location)?.area;
+            const memberArea = members.find(m => m.area === area)?.area;
             const areaData = AREA_DATA[memberArea];
             if (areaData && d.ISO_A3 === getCountryAlpha3(areaData.countryCode)) {
-                return createLabel(location, members.filter(m => m.location === location));
+                return createLabel(area, members.filter(m => m.area === area));
             }
         }
         return null;
@@ -433,16 +482,16 @@ function updateGlobeHighlight(location, states = null) {
             return;
         }
 
-        if (location === 'USA') {
+        if (area === 'USA') {
             const stateFips = hoverD.properties?.STATEFP;
             if (stateFips && states?.some(state => 
-                AREA_DATA[members.find(m => m.location === state).area].center[1] === hoverD.properties?.INTPTLAT 
-                && AREA_DATA[members.find(m => m.location === state).area].center[0] === hoverD.properties?.INTPTLON
+                AREA_DATA[members.find(m => m.area === state).area].center[1] === hoverD.properties?.INTPTLAT 
+                && AREA_DATA[members.find(m => m.area === state).area].center[0] === hoverD.properties?.INTPTLON
             )) {
                 globe.polygonAltitude(d => d === hoverD ? 0.12 : 0.01);
             }
         } else {
-            const memberArea = members.find(m => m.location === location)?.area;
+            const memberArea = members.find(m => m.area === area)?.area;
             const areaData = AREA_DATA[memberArea];
             if (areaData && hoverD.properties?.ISO_A3 === getCountryAlpha3(areaData.countryCode)) {
                 globe.polygonAltitude(d => d === hoverD ? 0.12 : 0.01);
@@ -452,12 +501,12 @@ function updateGlobeHighlight(location, states = null) {
 }
 
 // ラベルのHTML生成
-function createLabel(location, locationMembers) {
+function createLabel(area, areaMembers) {
     return `
         <div style="background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            <div style="font-weight: bold; color: #2c3e50;">${location}</div>
-            <div style="color: #7f8c8d; margin-top: 5px;">Members: ${locationMembers.length}</div>
-            ${locationMembers.map(member => `
+            <div style="font-weight: bold; color: #2c3e50;">${area}</div>
+            <div style="color: #7f8c8d; margin-top: 5px;">Members: ${areaMembers.length}</div>
+            ${areaMembers.map(member => `
                 <div style="color: #7f8c8d; margin-top: 3px;">
                     ${member.name} (${member.role})
                 </div>
