@@ -170,7 +170,13 @@ function updateMembersList() {
     const panel = document.getElementById('members-panel');
     if (!panel) return;
 
-    panel.innerHTML = '<h2>Foundation Members</h2>';
+    // ヘッダーとリストコンテナを設定
+    panel.innerHTML = `
+        <h2>Foundation Members</h2>
+        <div id="members-list"></div>
+    `;
+    
+    const listContainer = document.getElementById('members-list');
     
     // 地域ごとにメンバーをグループ化
     const groupedMembers = {};
@@ -248,8 +254,29 @@ function updateMembersList() {
             <div class="member-list">
                 ${sortedMembers.map(member => `
                     <div class="member-item">
-                        <div class="member-name">${member.name}</div>
-                        <div class="member-role">${member.role}</div>
+                        <div class="member-info">
+                            <div class="member-name">
+                                ${member.name}
+                                <div class="member-social">
+                                    ${member.linkedin ? `
+                                        <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    ` : ''}
+                                    ${member.twitter ? `
+                                        <a href="${member.twitter}" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    ` : ''}
+                                    ${member.website ? `
+                                        <a href="${member.website}" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                            <i class="fas fa-globe"></i>
+                                        </a>
+                                    ` : ''}
+                                </div>
+                            </div>
+                            <div class="member-role">${member.role}</div>
+                        </div>
                     </div>
                 `).join('')}
             </div>
@@ -273,7 +300,8 @@ function updateMembersList() {
             }
         });
         
-        panel.appendChild(regionCard);
+        // パネルではなくリストコンテナに追加
+        listContainer.appendChild(regionCard);
     });
 }
 

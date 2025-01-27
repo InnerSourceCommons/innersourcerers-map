@@ -2,6 +2,7 @@ members:
   - name: "Matt Cobby"
     role: "Secretary"
     area: "Australia"
+    linkedin: "https://www.linkedin.com/in/mattcobby/"
 
   - name: "Ada Dai"
     role: "Member"
@@ -26,10 +27,12 @@ members:
   - name: "Georg Grütter"
     role: "Assistant Treasurer"
     area: "Germany"
+    linkedin: "https://www.linkedin.com/in/georggruetter/"
 
   - name: "Sebastian Spier"
     role: "Board Member"
     area: "Germany"
+    linkedin: "https://www.linkedin.com/in/sebastianspier/"
 
   - name: "Guilherme Dellagustin"
     role: "Member"
@@ -38,6 +41,7 @@ members:
   - name: "Isabel Drost-Fromm"
     role: "Member"
     area: "Germany"
+    linkedin: "https://www.linkedin.com/in/isabel-drost-fromm-2a064a2/"
 
   - name: "Maximilian Capraro"
     role: "Member"
@@ -46,14 +50,17 @@ members:
   - name: "Tom Sadler"
     role: "Treasurer"
     area: "United Kingdom"
+    linkedin: "https://www.linkedin.com/in/tom-sadler-5b7b0726/"
 
   - name: "Danese Cooper"
     role: "Board Member"
     area: "Ireland"
+    linkedin: "https://www.linkedin.com/in/danesecooper/"
 
   - name: "Clare Dillon"
     role: "Board Member"
     area: "Ireland"
+    linkedin: "https://www.linkedin.com/in/claredillon/"
 
   - name: "Cristina Coffey"
     role: "Member"
@@ -66,10 +73,14 @@ members:
   - name: "Yuki Hattori"
     role: "Vice President"
     area: "japan"
+    linkedin: "https://www.linkedin.com/in/yukihattori/"
+    twitter: "https://twitter.com/yuhattor"
+    website: "https://hattori.dev"
 
   - name: "Daniel Izquierdo Cortázar"
     role: "President"
     area: "Spain"
+    linkedin: "https://www.linkedin.com/in/dicortazar/"
 
   - name: "Igor Zubaiurre"
     role: "Member"
@@ -118,6 +129,7 @@ members:
   - name: "Russell Rutledge"
     role: "Executive Director"
     area: "United States of America"
+    linkedin: "https://www.linkedin.com/in/russellrutledge/"
 
   - name: "Silona Bonewald"
     role: "Member"
