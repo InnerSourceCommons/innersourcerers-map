@@ -11,8 +11,8 @@ async function initializeApp() {
     try {
         // すべてのデータを並行して読み込む
         const [codes, locations, membersResponse] = await Promise.all([
-            fetch('/data/code.json').then(response => response.json()),
-            fetch('/data/locations.json').then(response => response.json()),
+            fetch('./data/code.json').then(response => response.json()),
+            fetch('./data/locations.json').then(response => response.json()),
             fetch('./data/members.yaml').then(response => response.text())
         ]);
 
