@@ -10,7 +10,7 @@ members:
 
   - name: "Fei Wan"
     role: "Member"
-    area: "China"
+    area: "United States of America"
 
   - name: "Jerry Tan"
     role: "Member"
@@ -45,6 +45,10 @@ members:
     linkedin: "https://www.linkedin.com/in/isabel-drost-fromm-2a064a2/"
 
   - name: "Maximilian Capraro"
+    role: "Member"
+    area: "Germany"
+
+  - name: "Johannes Tigges"
     role: "Member"
     area: "Germany"
 
