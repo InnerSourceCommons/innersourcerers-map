@@ -148,3 +148,7 @@ members:
   - name: "Zack Koppert"
     role: "Member"
     area: "United States of America"
+
+  - name: "Dmitrii Sugrobov"
+    role: "Member"
+    # EN: This member is not listed in the map.

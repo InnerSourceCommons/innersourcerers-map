@@ -143,44 +143,43 @@ function calculateCountryColors() {
         areaToCountryCode[country['alpha-3'].toLowerCase()] = country['country-code'];
     });
 
-    // メンバーの国コードを収集
-    const memberData = members.map(member => {
-        const area = member.area.toLowerCase();
-        console.log('Processing member area:', member.area, 'Available areas:', Object.keys(AREA_DATA));
-        
-        // 特別な地域の処理（例：usa_texas）
-        if (area.includes('_')) {
-            const [countryPart, regionPart] = area.split('_');
-            const countryCode = areaToCountryCode[countryPart];
-            const areaKey = `${countryCode}_${regionPart}`;
-            if (AREA_DATA[areaKey]) {
-                return {
-                    country: getCountryAlpha3(countryCode),
-                    area: member.area
-                };
+    // メンバーの国コードを収集（areaが設定されているメンバーのみ）
+    const memberData = members
+        .filter(member => member.area && member.area !== 'Other')  // Other や undefined を除外
+        .map(member => {
+            const area = member.area.toLowerCase();
+            
+            // 特別な地域の処理（例：usa_texas）
+            if (area.includes('_')) {
+                const [countryPart, regionPart] = area.split('_');
+                const countryCode = areaToCountryCode[countryPart];
+                const areaKey = `${countryCode}_${regionPart}`;
+                if (AREA_DATA[areaKey]) {
+                    return {
+                        country: getCountryAlpha3(countryCode),
+                        area: member.area
+                    };
+                }
             }
-        }
 
-        // 通常の国の処理
-        const countryCode = areaToCountryCode[area];
-        if (!countryCode) {
-            console.warn(`Area data not found for member area: ${member.area}`);
-            return null;
-        }
+            // 通常の国の処理
+            const countryCode = areaToCountryCode[area];
+            if (!countryCode) {
+                console.warn(`Area data not found for member area: ${member.area}`);
+                return null;
+            }
 
-        // 国コードで直接AREA_DATAを検索
-        if (!AREA_DATA[countryCode]) {
-            console.warn(`Area data not found for country code: ${countryCode}`);
-            return null;
-        }
+            // 国コードで直接AREA_DATAを検索
+            if (!AREA_DATA[countryCode]) {
+                console.warn(`Area data not found for country code: ${countryCode}`);
+                return null;
+            }
 
-        return {
-            country: getCountryAlpha3(countryCode),
-            area: member.area
-        };
-    }).filter(Boolean);
-
-    console.log('Member data:', memberData);
+            return {
+                country: getCountryAlpha3(countryCode),
+                area: member.area
+            };
+        }).filter(Boolean);
 
     return ({ id }) => {
         const countryData = countryCodesData.find(c => c['country-code'] === id);
@@ -206,17 +205,20 @@ function updateMembersList() {
     // 地域ごとにメンバーをグループ化
     const groupedMembers = {};
     members.forEach(member => {
-        if (!groupedMembers[member.area]) {
-            groupedMembers[member.area] = [];
+        const area = member.area || 'Other';  // エリアが未設定の場合は 'Other' を使用
+        if (!groupedMembers[area]) {
+            groupedMembers[area] = [];
         }
-        groupedMembers[member.area].push(member);
+        groupedMembers[area].push(member);
     });
     
     // アクティブな地域を追跡
     let activeCard = null;
 
-    // エリアをアルファベット順にソート
+    // エリアをアルファベット順にソート（Otherは最後に配置）
     const sortedAreas = Object.keys(groupedMembers).sort((a, b) => {
+        if (a === 'Other') return 1;
+        if (b === 'Other') return -1;
         return a.toLowerCase().localeCompare(b.toLowerCase());
     });
 
@@ -226,29 +228,30 @@ function updateMembersList() {
         const regionCard = document.createElement('div');
         regionCard.className = 'region-card';
         
-        // エリアコードを取得
+        // エリアコードを取得（Otherの場合はスキップ）
         let areaData;
         let countryCode;
         
-        if (area.includes('_')) {
-            // 地域の場合（例：840_texas）
-            [countryCode] = area.split('_');
-            areaData = AREA_DATA[area];
-        } else {
-            // 国の場合
-            countryCode = areaToCountryCode[area.toLowerCase()];
-            areaData = AREA_DATA[countryCode];
+        if (area !== 'Other') {
+            if (area.includes('_')) {
+                // 地域の場合（例：840_texas）
+                [countryCode] = area.split('_');
+                areaData = AREA_DATA[area];
+            } else {
+                // 国の場合
+                countryCode = areaToCountryCode[area.toLowerCase()];
+                areaData = AREA_DATA[countryCode];
+            }
         }
 
-        if (!areaData) {
-            console.warn(`Area data not found for: ${area}`);
-            return;
-        }
-        
         // データ属性とIDを追加
         regionCard.setAttribute('data-area', area);
-        regionCard.setAttribute('data-country-code', countryCode);
-        regionCard.id = `region-${countryCode}`;
+        if (countryCode) {
+            regionCard.setAttribute('data-country-code', countryCode);
+            regionCard.id = `region-${countryCode}`;
+        } else {
+            regionCard.id = 'region-other';
+        }
 
         // メンバーを役職でソート
         const sortedMembers = areaMembers.sort((a, b) => {
@@ -274,7 +277,7 @@ function updateMembersList() {
         });
         
         regionCard.innerHTML = `
-            <h3>${areaData.name || area}</h3>
+            <h3>${area === 'Other' ? 'Other' : (areaData?.name || area)}</h3>
             <div class="member-count">${sortedMembers.length} member(s)</div>
             <div class="member-list">
                 ${sortedMembers.map(member => `
@@ -315,8 +318,8 @@ function updateMembersList() {
             regionCard.classList.add('active');
             activeCard = regionCard;
 
-            if (areaData && areaData.center) {
-                // 地球儀を該当地域に移動
+            if (area !== 'Other' && areaData && areaData.center) {
+                // 地球儀を該当地域に移動（Otherの場合は移動しない）
                 globe.pointOfView({
                     lat: areaData.center[1],
                     lng: areaData.center[0],
