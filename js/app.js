@@ -6,6 +6,25 @@ let locationData = {};
 let AREA_DATA = {};
 let areaToCountryCode = {}; // グローバル変数として明示的に宣言
 
+// ウィンドウサイズ変更時に地球儀の位置を調整
+function adjustGlobePosition() {
+    const container = document.getElementById('globe-container');
+    const membersPanel = document.getElementById('members-panel');
+    const windowWidth = window.innerWidth;
+    const panelWidth = membersPanel.offsetWidth;
+    const globeWidth = windowWidth - panelWidth;
+    
+    // 地球儀を右パネルの幅を考慮して中央に配置
+    container.style.width = `${globeWidth}px`;
+    container.style.left = '0';
+    
+    // 地球儀のビューポートを更新
+    if (globe) {
+        globe.width(globeWidth);
+        globe.controls().update();
+    }
+}
+
 // アプリケーションの初期化
 async function initializeApp() {
     try {
@@ -63,6 +82,12 @@ async function initializeApp() {
         // UIの初期化
         await initGlobe();
         updateMembersList();
+        
+        // 初期位置の調整
+        adjustGlobePosition();
+        
+        // ウィンドウサイズ変更時のイベントリスナーを追加
+        window.addEventListener('resize', adjustGlobePosition);
     } catch (error) {
         console.error('Error initializing application:', error);
     }
@@ -325,11 +350,19 @@ async function initGlobe() {
             
             // 地球儀の表示領域を計算（右ペインを除いた領域の中央）
             const globeAreaWidth = windowWidth - panelWidth;
+            const leftOffset = 0;  // 左端からの位置を0に設定
+            
             container.style.width = `${globeAreaWidth}px`;
             container.style.height = `${windowHeight}px`;
             container.style.position = 'absolute';
-            container.style.left = '0';
+            container.style.left = `${leftOffset}px`;
             container.style.top = '0';
+            
+            // 地球儀のサイズを更新
+            if (globe) {
+                globe.width(globeAreaWidth);
+                globe.height(windowHeight);
+            }
         }
 
         // 初期位置の設定
@@ -457,6 +490,13 @@ async function initGlobe() {
         
         // 初期視点を設定
         globe.pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
+
+        // 地球儀の初期化が完了した後に位置を再調整
+        setTimeout(() => {
+            updateGlobePosition();
+            globe.width(container.offsetWidth);
+            globe.height(container.offsetHeight);
+        }, 100);
 
         // ウィンドウリサイズ時の処理
         window.addEventListener('resize', () => {
