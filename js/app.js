@@ -372,8 +372,8 @@ async function initGlobe() {
         updateGlobePosition();
 
         globe = Globe()(container)
-            .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
-            .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
+            .globeImageUrl('img/earth-night.jpg')
+            .backgroundImageUrl('img/night-sky.png')
             .lineHoverPrecision(0)
             .polygonsData(worldCountries.features)
             .polygonAltitude(0.01)
